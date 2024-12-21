@@ -1,0 +1,54 @@
+.card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    margin-top: 100px;
+    margin-left: 500px;
+    border: 2px solid #4D533C; /* Добавляем рамку */
+    border-radius: 8px; /* Скругляем углы рамки */
+    padding: 20px;
+}
+
+
+.card-title {
+    color: #4D533C;
+  text-align: left;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 55px;
+}
+
+.card-description {
+    color: rgba(33, 56, 66, 0.6);
+    display: flex; /* Включаем Flexbox */
+    flex-direction: row; /* Элементы располагаются в строку */
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    height: 68px;
+    align-items: center; /* Вертикальное выравнивание по центру */
+    gap: 35px; /* Добавляем промежуток между элементами */
+}
+
+.card-text{
+    width: 400 px; 
+}
+
+.card-price {
+    color: #FFD723;
+    text-align: right;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    width: 183px;
+    height: 68px;
+}
+
+

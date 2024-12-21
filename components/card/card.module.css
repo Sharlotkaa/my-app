@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 300px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .link {
+    color: #D4D6D4;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    width: 183px;
+    height: 24px;
+    text-decoration: underline;
+  }
+  
+  .link:hover {
+    color: #FFD723; /* Изменение цвета текста на желтый при наведении */
+  }
+  
+  .link::before {
+    content: ""; /* Создание псевдоэлемента */
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent; /* Левый край треугольника */
+    border-right: 8px solid transparent; /* Правый край треугольника */
+    border-top: 8px solid #D4D6D4; /* Цвет треугольника */
+    transform: rotate(270deg); /* Поворот треугольника вправо */
+  }
+  
+  .link:hover::before {
+    border-top-color: #FFD723; /* Изменение цвета треугольника на желтый */
+  }
+  

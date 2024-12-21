@@ -1,0 +1,406 @@
+.mainFirst {
+  background-image: url(/catalog/Bitmap.png);
+  background-size: cover; /* Чтобы изображение заполнило блок */
+  background-position: center; /* Центрирование */
+  height: 100vh; /* Устанавливаем высоту для блока */
+}
+
+.mainHeader{
+  display: flex;
+  flex-direction: row;
+  width: 1111px;
+  height: 43px;
+  align-items: flex-start;
+  gap: 814px;
+  box-sizing: border-box;
+}
+
+.logo{
+  width: 256.29px;
+  height: 39.27px;
+  margin-left: 164px;
+  box-sizing: border-box;
+  background-image: url(/public/Logo.svg);
+  background-size: cover; /* Чтобы изображение заполнило блок */
+  margin-top: 24px;
+}
+
+/* Контейнер кнопки */
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5; /* Светлый фон */
+  border-radius: 50%; /* Делаем кнопку круглой */
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  flex-direction: column;
+}
+
+/* Полоски внутри кнопки */
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black; /* Цвет полос */
+  margin: 2px 0; /* Расстояние между полосками */
+  border-radius: 2px; /* Сглаживаем края полос */
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mainFirstText{
+  display: flex;
+  flex-direction: column;
+  width: 616px;
+  height: 412px;
+  align-items: flex-start;
+  margin-left: 166px;
+  box-sizing: border-box;
+  margin-top: 121px;
+  justify-content: left;
+  
+}
+.mainFirstTextSmall{
+  color: #FFFFFF;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100px;
+  height: 21px;
+  margin: 0;
+  margin-bottom: 24px;
+  line-height: 21px;
+}
+
+.mainFirstTextH1{
+  color: #FFFFFF;
+  text-align: left;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  width: 616px;
+  height: 222px;
+  line-height: 74px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.mainFirstTextSmall2{
+  color: #FFFFFF;
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  width: 581px;
+  height: 55px;
+  line-height: 26px;
+}
+
+.link{
+  color: #FFD723;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.link::before {
+  content: ""; /* Создание псевдоэлемента */
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; /* Левый край треугольника */
+  border-right: 8px solid transparent; /* Правый край треугольника */
+  border-top: 8px solid #FFD723; /* Цвет треугольника */
+  transform: rotate(270deg); /* Поворот треугольника вправо */
+}
+
+.mainSecond{
+  max-width: 100%; /* Ограничение ширины по экрану */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 166px;
+  margin-right: 164px;
+  box-sizing: border-box;
+}
+
+.mainSecondH2{
+  color: #4D533C;
+  text-align: left;
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  height: 92px;
+  width: 607px;
+  margin-top: 150px;
+}
+
+.mainSecondBlock {
+  display: flex;
+  height: 400px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+  overflow-x: auto; /* Позволяет горизонтальную прокрутку */
+  scroll-snap-type: x mandatory; /* Привязка к элементам */
+  max-width: 100%; /* Ограничение ширины по экрану */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Стили для трека скролла внутри .mainSecondBlock */
+.mainSecondBlock::-webkit-scrollbar {
+  height: 8px; /* Толщина горизонтального скролла */
+}
+
+.mainSecondBlock::-webkit-scrollbar-track {
+  background: #eeeeee; /* Цвет трека */
+}
+
+.mainSecondBlock::-webkit-scrollbar-thumb {
+  background: #4F553D; /* Цвет ползунка */
+}
+
+.mainSecondBlock::-webkit-scrollbar-thumb:hover {
+  background: #63694c; /* Цвет ползунка при наведении */
+}
+
+.link1 {
+  color: #D4D6D4;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  width: 183px;
+  height: 24px;
+  text-decoration: underline;
+}
+
+.link1:hover {
+  color: #FFD723; /* Изменение цвета текста на желтый при наведении */
+}
+
+.link1::before {
+  content: ""; /* Создание псевдоэлемента */
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent; /* Левый край треугольника */
+  border-right: 8px solid transparent; /* Правый край треугольника */
+  border-top: 8px solid #D4D6D4; /* Цвет треугольника */
+  transform: rotate(270deg); /* Поворот треугольника вправо */
+}
+
+.link1:hover::before {
+  border-top-color: #FFD723; /* Изменение цвета треугольника на желтый */
+}
+
+
+
+.blockItem {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.mainThird {
+  display: flex;
+  flex-direction: column;
+  width: 1257px;
+  height: 362px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  background-color: #FAFAFA;
+  padding: 0px 289px 71px 164px;
+  margin-top: 164px;
+  position: relative; /* Устанавливаем относительное позиционирование для родителя */
+  z-index: 1; /* Блок mainThird будет поверх */
+  box-shadow: 50px 130px 100px 0px rgba(0, 0, 0, 0.15); /* Настраиваем тень */
+}
+
+.mainThirdText{
+  color: #4D533C;
+  text-align: left;
+  width: 100%;
+  font-size: 60px;
+  font-weight: 700;
+  height: 148px;
+  width: 822px;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.blockk {
+  background-color: #4F553D;
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+  position: absolute;  /* Абсолютное позиционирование */
+  top: 100%;  /* Помещаем блок под mainThird */
+  left: 0;
+  z-index: -1;  /* Блок будет находиться за mainThird */
+  margin-top: 937px;
+}
+
+.footer1{
+  background-image: url(/catalog/Bitmap1.png);
+  background-size: cover; /* Чтобы изображение заполнило блок */
+  background-position: center; /* Центрирование */
+  height: 100vh; /* Устанавливаем высоту для блока */
+  background-color: #4F553D;
+  width: auto;
+  height: 618px; 
+  overflow: visible; /* Позволяет элементам выходить за пределы блока */
+}
+
+.footerContanted{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 580px;
+  box-sizing: border-box;
+  margin: 110px 165px 30px 165px;
+}
+
+.footerContact {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 88px;
+  width: 500px;
+  gap:120px;
+}
+
+
+
+.hr1 {
+  height: 1px;
+  width: 1110px;
+  background-color: #5D6544;
+  border: none; /* Убираем границу, если она есть */
+  margin-top: 52px;
+}
+.hr2 {
+  height: 1px;
+  width: 1110px;
+  background-color: #5D6544;
+  border: none; /* Убираем границу, если она есть */
+  margin-top: 60px;
+  
+}
+
+.footerSections{
+  display: flex;
+  flex-direction: row;
+  width: 1111px;
+  height: 319px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 70px;
+  
+}
+
+.footerTEXT{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footerLabel{
+  color: #B6C197;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footerLabel4{
+  color: #B6C197;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.footerLabel2{
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footerBottom{
+  display: flex;
+  flex-direction: row;
+  width: 1110px;
+  height: 60px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  gap: 621px;
+  margin-top: 9px;
+}
+
+
+.footerLabel3{
+  color: #B6C197;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  
+}
+
+.footerSection1{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 259px;
+  gap: 21px;
+  margin-top:60px;
+}
+.footerSection2{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 219px;
+  gap: 21px;
+  margin-top:60px;
+}
+.footerSection3{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 219px;
+  gap: 21px;
+  margin-top:60px;
+  
+}
+
+.hr4{
+  height: 210px;
+  width: 1px;
+  background-color: #5D6544;
+  border: none; /* Убираем границу, если она есть */
+  margin-top: 72px;
+
+}
+
+.footerSection4{
+  display: flex;
+  flex-direction: column;
+  width: 322px;
+  height: 232px;
+  gap: 23px;
+  margin-top:60px;
+}
+.email{
+  color: #FFFFFF;
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footerTEXT{
+  margin: 0;
+  padding: 0;
+}
