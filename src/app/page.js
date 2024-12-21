@@ -1,7 +1,6 @@
-
 import Link from "next/link";
 import prisma from "../../lib/prisma";
-import { Card } from "@/components/card/Card";
+import { Card } from "../../components/card/Card";
 import styles from "./page.module.css";
 import "./globals.css";
 
@@ -17,7 +16,6 @@ export default async function HomePage() {
   return (
     <>
       <main>
-        
         <section className={styles.mainFirst}>
           <div className={styles.mainHeader}>
             <div className={styles.logo}>
@@ -50,18 +48,22 @@ export default async function HomePage() {
           </h2>
           <div className={styles.mainSecondBlock}>
             {cardList.length > 0 ? (
-                cardList.map((item) => (
-                <Link key={item.id} href={`/catalog/${item.id}`} className={styles.blockItem}>
+              cardList.map((item) => (
+                <Link
+                  key={item.id}
+                  href={`/catalog/${item.id}`}
+                  className={styles.blockItem}
+                >
                   <Card
                     name={item.name}
                     description={item.description}
                     price={item.price}
                   />
                 </Link>
-                      ))
-                  ) : (
-                    <p>Данные не найдены. Проверьте подключение к базе данных.</p>
-                          )}
+              ))
+            ) : (
+              <p>Данные не найдены. Проверьте подключение к базе данных.</p>
+            )}
           </div>
         </section>
 
@@ -85,7 +87,9 @@ export default async function HomePage() {
             </div>
             <div className={styles.footerContact1}>
               <h5 className={styles.footerLabel}>Address</h5>
-              <h5 className={styles.footerLabel2}>491 Merlin Crest Suite 963</h5>
+              <h5 className={styles.footerLabel2}>
+                491 Merlin Crest Suite 963
+              </h5>
             </div>
           </div>
 
@@ -94,29 +98,55 @@ export default async function HomePage() {
             <div className={styles.footerSection1}>
               <h4>SERVICES</h4>
               <div className={styles.footerTEXT}>
-                <a className={styles.footerLabel3} href="#">Strategy Design</a>
-                <a className={styles.footerLabel3} href="#">Product Design</a>
-                <a className={styles.footerLabel3} href="#">Content Strategy</a>
-                <a className={styles.footerLabel3} href="#">Brand Strategy</a>
-                <a className={styles.footerLabel3} href="#">Development</a>
+                <a className={styles.footerLabel3} href="#">
+                  Strategy Design
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Product Design
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Content Strategy
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Brand Strategy
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Development
+                </a>
               </div>
             </div>
             <div className={styles.footerSection2}>
               <h4>HELP AND ADVICE</h4>
               <div className={styles.footerTEXT}>
-                <a className={styles.footerLabel3} href="#">How it works</a>
-                <a className={styles.footerLabel3} href="#">Contact Support</a>
-                <a className={styles.footerLabel3} href="#">Privacy Policy</a>
-                <a className={styles.footerLabel3} href="#">FAQ</a>
+                <a className={styles.footerLabel3} href="#">
+                  How it works
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Contact Support
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Privacy Policy
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  FAQ
+                </a>
               </div>
             </div>
             <div className={styles.footerSection3}>
               <h4>COMPANY</h4>
               <div className={styles.footerTEXT}>
-                <a className={styles.footerLabel3} href="#">About</a>
-                <a className={styles.footerLabel3} href="#">Blog</a>
-                <a className={styles.footerLabel3} href="#">Contact</a>
-                <a className={styles.footerLabel3} href="#">Jobs</a>
+                <a className={styles.footerLabel3} href="#">
+                  About
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Blog
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Contact
+                </a>
+                <a className={styles.footerLabel3} href="#">
+                  Jobs
+                </a>
               </div>
             </div>
             <hr className={styles.hr4} />
