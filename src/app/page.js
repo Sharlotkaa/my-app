@@ -1,7 +1,7 @@
 import Link from "next/link";
-import prisma from "../../lib/prisma";
-import { Card } from "../../components/card/Card";
-import styles from "./page.module.css";
+import prisma from "@/lib/prisma";
+import { Card } from "@/components/card/Card";
+import styles from "@/src/app/page.module.css";
 import "./globals.css";
 
 export default async function HomePage() {
