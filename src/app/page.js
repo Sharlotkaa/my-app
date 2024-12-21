@@ -1,5 +1,4 @@
 import Link from "next/link";
-<<<<<<< HEAD
 import prisma from "@/lib/prisma";
 import { Card } from "@/components/card/Card";
 import styles from "@/src/app/page.module.css";
