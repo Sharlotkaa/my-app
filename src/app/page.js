@@ -12,7 +12,7 @@ export default async function HomePage() {
   } catch (error) {
     console.error("Ошибка загрузки данных из базы данных:", error);
   }
-
+  //программма
   return (
     <>
       <main>
